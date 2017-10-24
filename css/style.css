@@ -78,6 +78,31 @@ header.masthead .intro-text .skills {
     padding: 0;
 }
 
+
+
+/* Intrest */
+.interest-div{
+    display: flex;
+    background-color: white;
+    max-height: 50vh;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.interest-div img {
+    max-height: 40vh;
+    width: auto;
+    padding: 15px;
+
+}
+
+.img-circle {
+    border-radius: 50%;
+}
+
+
+
 /* Alert  */
 .alertify-notifier .ajs-message.ajs-success {
     color: #fff;

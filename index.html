@@ -18,8 +18,8 @@
   <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
   <!-- alertify -->
-  <link rel="stylesheet" href="css/alertify/alertify.min.css"/>
-  <link rel="stylesheet" href="css/alertify/bootstrap.min.css"/>
+  <link rel="stylesheet" href="css/alertify/alertify.min.css" />
+  <link rel="stylesheet" href="css/alertify/bootstrap.min.css" />
   <!-- Custom styles for this template -->
   <link href="css/freelancer.min.css" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
@@ -106,7 +106,9 @@
                 <i class="fa fa-search-plus fa-3x"></i>
               </div>
             </div>
-            <img class="img-fluid" src="img/portfolio/cake.png" alt="">
+            <div class="interest-div">
+              <img class="img-circle img-fluid" src="img/portfolio/dna.png" alt="dna">
+            </div>
           </a>
         </div>
         <div class="col-sm-4 portfolio-item">
@@ -116,7 +118,10 @@
                 <i class="fa fa-search-plus fa-3x"></i>
               </div>
             </div>
-            <img class="img-fluid" src="img/portfolio/game.png" alt="">
+            <div class="interest-div">
+              <img class="img-circle img-fluid" src="img/portfolio/browser.png" alt="dna">
+            </div>
+            <!-- <img class="img-fluid" src="img/portfolio/game.png" alt=""> -->
           </a>
         </div>
         <div class="col-sm-4 portfolio-item">
@@ -126,7 +131,9 @@
                 <i class="fa fa-search-plus fa-3x"></i>
               </div>
             </div>
-            <img class="img-fluid" src="img/portfolio/submarine.png" alt="">
+            <div class="interest-div">
+              <img class="img-circle img-fluid" src="img/portfolio/robot.png" alt="dna">
+            </div>
           </a>
         </div>
       </div>
@@ -144,17 +151,17 @@
         <div class="col-lg-8 mx-auto">
           <!-- To configure the contact form email address, go to mail/contact_me.php and update the email address in the PHP file on line 19. -->
           <!-- The form should work on most web servers, but if the form is not working you may need to configure your web server differently. -->
-          <form  name="sentMessage" id="contact-form" >
+          <form name="sentMessage" id="contact-form">
             <div class="control-group">
               <div class="form-group floating-label-form-group controls">
                 <label>Name</label>
-                <input class="form-control" id="name" name="name" type="text" placeholder="Name" >
+                <input class="form-control" id="name" name="name" type="text" placeholder="Name" required>
               </div>
             </div>
             <div class="control-group">
               <div class="form-group floating-label-form-group controls">
                 <label>Email Address</label>
-                <input class="form-control" id="email" name="email" type="email" placeholder="Email Address" >
+                <input class="form-control" id="email" name="email" type="email" placeholder="Email Address" required>
               </div>
             </div>
             <div class="control-group">
@@ -166,7 +173,7 @@
             <div class="control-group">
               <div class="form-group floating-label-form-group controls">
                 <label>Message</label>
-                <textarea class="form-control" id="message" name="message" rows="5" placeholder="Message"></textarea>
+                <textarea class="form-control" id="message" name="message" rows="5" placeholder="Message" required></textarea>
               </div>
             </div>
             <br>
@@ -539,7 +546,6 @@
       }
       // drag: p5.setup(),
     })
-
   </script>
 
 </body>
