@@ -6,8 +6,6 @@ $(document).ready(function() {
       var message = document.getElementById('message')
   
       if (!name.value || !email.value || !message.value) {
-        // alertify.error("Please check your entries");
-        alertify.error("Please check your entries")
         return false;
       } else {
         $.ajax({
@@ -19,7 +17,6 @@ $(document).ready(function() {
         e.preventDefault();
         $(this).get(0).reset();
         alertify.success("Message sent");
-        // alert("Message sent")
       }
     });
   });

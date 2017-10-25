@@ -48,7 +48,6 @@ function setup() {
     for (let each of clouds) {
       each.colour = cloud_colour;
     }
-
     //Rain
     if (drops.length > rain_rate) {
       drops.length = rain_rate
@@ -66,7 +65,6 @@ function draw() {
   background(200, 200, 255);
   let w = window.innerWidth;
   let h = window.innerHeight;
-
   //Sun
   sun(w, h);
   //Rainbow
