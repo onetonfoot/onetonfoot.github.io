@@ -88,21 +88,18 @@ header.masthead .intro-text .skills {
 .interest-div{
     display: flex;
     background-color: white;
-    max-height: 50vh;
+    height: auto;
     justify-content: center;
     align-items: center;
-
 }
 
 .interest-div img {
-    max-height: 40vh;
-    width: auto;
     padding: 15px;
-
 }
 
 .img-circle {
-    border-radius: 50%;
+    width: 90% !important;
+    height: auto;
 }
 
 /* Alert  */
