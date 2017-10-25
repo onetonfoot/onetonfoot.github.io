@@ -36,7 +36,7 @@ function setup() {
       clouds[i] = new Cloud(randomInt(0, w), randomInt(0, h / 3));
     }
     first_setup = false
-  } else {
+  } else { //Deals with window resizing prevents objects jumping
 
     weather = document.getElementsByClassName("star-slider")[0].offsetLeft
     cloud_colour = Math.floor(map(weather, -1, 190, 255, 100))
