@@ -1,554 +1,639 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
+  <title>Dom</title>
+  <!-- Meta -->
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="Website about me">
-  <meta name="author" content="Dominic Morgan">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Responsive HTML5 Resume/CV Template for Developers">
+  <meta name="author" content="Xiaoying Riley at 3rd Wave Media">
+  <!-- <link rel="shortcut icon" href="favicon.ico"> -->
+  <link href="data:image/x-icon;base64,AAABAAEAEBAAAAEACABoBQAAFgAAACgAAAAQAAAAIAAAAAEACAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAAAAAAAop2mAGy5PwB7en4Ah8NlAB4YIwCi1oIAJWoBAG9ycABcXFwA//7/ACIgIABxc3MAXl1fAE2uFwBiYF8AWpQ1ABUUGAAkUw4A+ff9AGxubgD9/f0AM5cBANbX1QAkHCcAOpsEAH2+WADu+ekAPj1BAK/YmwAGCAgAzOu4ABcyBwB/kncAHx8fADGXAgBZa0wA6urqAFptUgB6vFMAh4mJAImJiQBOsBYAOzY/ANzc3ABmZWcALCkrADxJOQAFAwMAb7xCALPZnwCz3J8Ah89fAHR1cwAlISYAO50DAD06QwC5tbsAb7lDAAw/AwBrbW4ARUFGAJaWlgCYlpYAHh4eAHFxcQCIiIgAdHF6AIqIiADZ29sAY2NjABMSFgC0trYAxOWyAFmXOQB6enoAQEQ+AGpsbAAmVAwAicVnAAkFCwBEUD4Ao9CHAP3//gAkbwMAhoWJAO3t7QBzdXUAUbAZAGy4QgC8uroAn86CAOXm4gAIBgYA/PX8ABsdHQD6//YAW1lZAIWBhwD9//8ABx8AAP///wCHh4cAhJh7AO/46wC1tbUAw+SxAN3f4AB9dX8A9v70AENGPQBra2sADj4DAJ/TgAAZMQkA/vv9AA4GEAD//v0A6uvpAF9dXQB0dHQAYV5gANTsyQBOsRUAeHV3AGa7OwBpuT4ALCgtAAMFBQD3+/UAy+u1ALXboQD9/vUAis5hAB8fJQD+/v4A//7+AK6utAAJHwIAiIeJAImIjACys7EA2O3NAKCdpgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/RClCQilmPgAAAAAAAABhHmYpjIsoQoB3AAAAAAAAImtjZWVlh2NFCwAAAAAAK3RWiA8sF0Z1JVA4AAAAfGRyGI+GQTw2AQUgigMAAENUDk47JjVXJHASKgdsAAAUZ4J7hYRlZWA0WB8hDAAATTkKHVJlZWVjWzJliQgAAC1LFXoagWVTbSeOc3hvAACNR3ZxI08zgwQWBlwRSAAAABxuMUlZGTc6agJMPQAAAAAAMFFeG31+aBMvXQAAAAAAAAAuX1UQSmJAfwAAAAAAAAAAAGkJeQ13WgAAAAAAAAAAAAAAAAAAAAAAAAAAAP//AADwDwAA4AcAAOAHAADAAwAAgAEAAIABAACAAQAAgAEAAIABAACAAQAAwAMAAOAHAADwDwAA+B8AAP//AAA=" rel="icon" type="image/x-icon" />
+  <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,400italic,300italic,300,500italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+  <!-- Bootstrap CSS -->
+  <!-- <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css"> -->
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <!-- Fontawesome CSS -->
+  <!-- <link rel="stylesheet" href="assets/plugins/font-awesome/css/font-awesome.css"> -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
 
-  <title>Dominic Morgan - Web Developer</title>
 
-  <!-- Bootstrap core CSS -->
-  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <!-- Custom fonts for this template -->
-  <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
-  <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
-  <!-- alertify -->
-  <link rel="stylesheet" href="css/alertify/alertify.min.css" />
-  <link rel="stylesheet" href="css/alertify/bootstrap.min.css" />
-  <!-- Custom styles for this template -->
-  <link href="css/freelancer.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
+  <!-- Custom CSS -->
+  <!-- <link id="theme-style" rel="stylesheet" href="assets/css/styles.css"> -->
+  <style>
+body {
+  font-family: 'Roboto', sans-serif;
+  color: #545E6C;
+  background: #f5f5f5;
+  font-size: 14px;
+  padding: 30px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+}
+a {
+  color: #2d7788;
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -ms-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+}
+a:hover {
+  text-decoration: underline;
+  color: #1a454f;
+}
+a:focus {
+  text-decoration: none;
+}
+p {
+  line-height: 1.5;
+}
+.wrapper {
+  background: #42A8C0;
+  max-width: 960px;
+  margin: 0 auto;
+  position: relative;
+  -webkit-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+.sidebar-wrapper {
+  background: #42A8C0;
+  position: absolute;
+  right: 0;
+  width: 290px;
+  height: 100%;
+  min-height: 800px;
+  color: #fff;
+}
+.sidebar-wrapper a {
+  color: #fff;
+}
+.sidebar-wrapper .profile-container {
+  padding: 30px;
+  background: rgba(0, 0, 0, 0.2);
+  text-align: center;
+  color: #fff;
+}
+.sidebar-wrapper .name {
+  font-size: 32px;
+  font-weight: 900;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+.sidebar-wrapper .tagline {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.sidebar-wrapper .profile {
+  margin-bottom: 15px;
+}
+.sidebar-wrapper .contact-list .fa {
+  margin-right: 5px;
+  font-size: 15px;
+  vertical-align: middle;
+}
+.sidebar-wrapper .contact-list li {
+  margin-bottom: 15px;
+}
+.sidebar-wrapper .contact-list li:last-child {
+  margin-bottom: 0;
+}
+.sidebar-wrapper .contact-list .email .fa {
+  font-size: 12px;
+}
+.sidebar-wrapper .container-block {
+  padding: 30px;
+}
+.sidebar-wrapper .container-block-title {
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 700;
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+.sidebar-wrapper .degree {
+  font-size: 14px;
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+.sidebar-wrapper .education-container .item {
+  margin-bottom: 15px;
+}
+.sidebar-wrapper .education-container .item:last-child {
+  margin-bottom: 0;
+}
+.sidebar-wrapper .education-container .meta {
+  color: rgba(255, 255, 255, 0.6);
+  font-weight: 500;
+  margin-bottom: 0px;
+  margin-top: 0;
+}
+.sidebar-wrapper .education-container .time {
+  color: rgba(255, 255, 255, 0.6);
+  font-weight: 500;
+  margin-bottom: 0px;
+}
+.sidebar-wrapper .languages-container .lang-desc {
+  color: rgba(255, 255, 255, 0.6);
+}
+.sidebar-wrapper .languages-list {
+  margin-bottom: 0;
+}
+.sidebar-wrapper .languages-list li {
+  margin-bottom: 10px;
+}
+.sidebar-wrapper .languages-list li:last-child {
+  margin-bottom: 0;
+}
+.sidebar-wrapper .interests-list {
+  margin-bottom: 0;
+}
+.sidebar-wrapper .interests-list li {
+  margin-bottom: 10px;
+}
+.sidebar-wrapper .interests-list li:last-child {
+  margin-bottom: 0;
+}
+.main-wrapper {
+  background: #fff;
+  padding: 60px;
+  padding-right: 350px;
+}
+.main-wrapper .section-title {
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: 500;
+  color: #2d7788;
+  position: relative;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+.main-wrapper .section-title .fa {
+  width: 30px;
+  height: 30px;
+  margin-right: 8px;
+  display: inline-block;
+  color: #fff;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  background: #2d7788;
+  text-align: center;
+  padding-top: 8px;
+  font-size: 16px;
+  position: relative;
+  top: -2px;
+}
+.main-wrapper .section {
+  margin-bottom: 60px;
+}
+.main-wrapper .experiences-section .item {
+  margin-bottom: 30px;
+}
+.main-wrapper .upper-row {
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 2px;
+}
+.main-wrapper .job-title {
+  color: #3F4650;
+  font-size: 16px;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-weight: 500;
+}
+.main-wrapper .time {
+  position: absolute;
+  right: 0;
+  top: 0;
+  color: #97AAC3;
+}
+.main-wrapper .company {
+  margin-bottom: 10px;
+  color: #97AAC3;
+}
+.main-wrapper .project-title {
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+.main-wrapper .projects-section .intro {
+  margin-bottom: 30px;
+}
+.main-wrapper .projects-section .item {
+  margin-bottom: 15px;
+}
+.skillset .item {
+  margin-bottom: 15px;
+  overflow: hidden;
+}
+.skillset .level-title {
+  font-size: 14px;
+  margin-top: 0;
+  margin-bottom: 12px;
+}
+.skillset .level-bar {
+  height: 12px;
+  background: #f5f5f5;
+}
+.skillset .level-bar-inner {
+  height: 12px;
+  background: #7bc2d3;
+}
+.footer {
+  padding: 30px;
+  padding-top: 60px;
+}
+.footer .copyright {
+  line-height: 1.6;
+  color: #545E6C;
+  font-size: 13px;
+}
+.footer .fa-heart {
+  color: #fb866a;
+}
+/* Extra small devices (phones, less than 768px) */
+@media (max-width: 767px) {
+  .sidebar-wrapper {
+    position: static;
+    width: inherit;
+  }
+  .main-wrapper {
+    padding: 30px;
+  }
+  .main-wrapper .time {
+    position: static;
+    display: block;
+    margin-top: 5px;
+  }
+  .main-wrapper .upper-row {
+    margin-bottom: 0;
+  }
+}
+/* Small devices (tablets, 768px and up) */
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .skillset .level-title {
+    display: inline-block;
+    float: left;
+    width: 30%;
+    margin-bottom: 0;
+  }
+  .skillset .level-bar {
+    display: inline-block;
+    width: 70%;
+    float: left;
+    position: relative;
+    top: 1px;
+  }
+}
+  
+  </style>
 
+
+
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
 </head>
 
-<body id="page-top">
+<body>
+  <div class="wrapper">
+    <div class="sidebar-wrapper">
+      <div class="profile-container">
+        <!--  <img class="profile" src="assets/images/profile.png" alt="" /> -->
+        <h1 class="name">Dominic Morgan</h1>
+      </div>
+      <!--//profile-container-->
 
-  <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
-    <div class="container">
-      <a class="navbar-brand js-scroll-trigger" href="#page-top">Dom</a>
-      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive"
-        aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-        Menu
-        <i class="fa fa-bars"></i>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#about">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#interest">Interest</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
-          </li>
+      <div class="contact-container container-block">
+        <ul class="list-unstyled contact-list">
+          <li class="email"><i class="fa fa-envelope"></i><a href="mailto: dominicmorgan1995@gmail.com">dominicmorgan1995@gmail.com</a></li>
+          <li class="phone"><i class="fa fa-phone"></i><a href="tel:0123 456 789">+447727719419</a></li>
+          <!--  <li class="website"><i class="fa fa-globe"></i><a href="http://themes.3rdwavemedia.com/website-templates/free-responsive-website-template-for-developers/" target="_blank">portfoliosite.com</a></li> -->
+          <!-- <li class="linkedin"><i class="fa fa-linkedin"></i><a href="#" target="_blank">linkedin.com/in/alandoe</a></li> -->
+          <li class="github"><i class="fa fa-github"></i><a href="https://github.com/onetonfoot" target="_blank">github.com/onetonfoot</a></li>
+          <!--  <li class="twitter"><i class="fa fa-twitter"></i><a href="https://twitter.com/3rdwave_themes" target="_blank">@twittername</a></li> -->
         </ul>
       </div>
-    </div>
-  </nav>
+      <!--//contact-container-->
+      <div class="education-container container-block">
+        <h2 class="container-block-title">Education</h2>
+        <!--//item-->
+        <div class="item">
+          <h4 class="degree">BSc in Biochemistry (2.1)</h4>
+          <h5 class="meta">University of Southampton </h5>
+          <div class="time">2014 - 2017</div>
+        </div>
+        <!--//item-->
+        <div class="item">
+          <h4 class="degree">A-levels - Maths(B), Biology(B), Chemistry(B) </h4>
+          <h5 class="meta">Bexley Grammar School</h5>
+          <div class="time">2011-2013</div>
+        </div>
+      </div>
+      <!--//education-container-->
 
-  <!-- Sketch -->
-  <div id="sketch"></div>
-  <!-- Header -->
-  <header class="masthead">
-    <div id="intro-container" class="container">
-      <div id="intro">
-        <!-- <img class="img-fluid" src="img/sun.png" alt=""> -->
-        <div class="intro-text">
-          <span class="name"> Dominic Morgan</span>
-          <div class="div-hr">
-            <div class="overlay">
-              <!-- <div class="animated pulse star-slider infinite "> -->
-              <div class="star-slider ">
-                <i id="star-slider" class="fa fa-star fa-4x" aria-hidden="true"></i>
-              </div>
+
+      <div class="education-container container-block">
+        <h2 class="container-block-title">MOOC (Massively Open Online Course)</h2>
+        <!--//item-->
+        <div class="item">
+          <h4 class="degree">Creative Applications of Deep Learning with Tensorflow</h4>
+          <h5 class="meta">Kadenze</h5>
+          <div class="time">2016 - 2017</div>
+        </div>
+        <!--//item-->
+        <div class="item">
+          <h4 class="degree">Machine Learning, Julia Scientific Programming</h4>
+          <h5 class="meta">Coursea</h5>
+          <div class="time">2016 - 2017</div>
+        </div>
+      </div>
+      <!--//interests-->
+
+      <div class="interests-container container-block">
+        <h2 class="container-block-title">Interests</h2>
+        <ul class="list-unstyled interests-list">
+          <li>Skateboarding</li>
+          <li>Muay thai</li>
+          <li>Machine learning and AI </li>
+          <li>Cooking</li>
+        </ul>
+      </div>
+      <!--//interests-->
+
+    </div>
+    <!--//sidebar-wrapper-->
+
+    <div class="main-wrapper">
+
+      <section class="section summary-section">
+        <h2 class="section-title"><i class="fa fa-user"></i>Personal Profile</h2>
+        <div class="summary">
+          <p></p>
+          <p> 
+            I’m an ambious and self-motivated individual who has a natural curiosity to learn and puts a lot of care and effort into their work. 
+            Having been introduced to coding through Bioinformatics, during my Biochemistry degree, I was captivated by it. 
+            Nearly two years later I have nearly completed a coding bootcamp and am eager to start a career in data science.
+          </p>
+        </div>
+        <!--//summary-->
+      </section>
+      <!--//section-->
+
+      <section class="section experiences-section">
+        <h2 class="section-title"><i class="fa fa-briefcase"></i>Experience</h2>
+
+        <!--//item-->
+        <div class="item">
+          <div class="meta">
+            <div class="upper-row">
+              <h3 class="job-title">Accelerate Bootcamp</h3>
+              <div class="time">2018 - Present</div>
             </div>
+            <!--//upper-row-->
+            <div class="company">Sheung Wan, Hong Kong</div>
           </div>
-          <!-- <span class="skills">Web Developer</span> -->
-        </div>
-      </div>
-
-    </div>
-  </header>
-
-  <!-- About Section -->
-  <section id="about">
-    <div class="container">
-      <h2 class="text-center">About</h2>
-      <hr class="star-primary">
-      <div class="row">
-        <div class="col-lg-4 ml-auto">
-          <p>Hey I'm a learning web development in Hong Kong</p>
-        </div>
-        <div class="col-lg-4 mr-auto">
-          <p>Put some more intresting text here...</p>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- Intrest Grid Section -->
-  <section class="success" id="interest">
-    <div class="container">
-      <h2 class="text-center">Interest</h2>
-      <hr class="star-light">
-      <div class="row">
-        <div class="col-sm-4 portfolio-item">
-          <a class="portfolio-link" href="#portfolioModal2" data-toggle="modal">
-            <div class="caption">
-              <div class="caption-content">
-                <i class="fa fa-search-plus fa-3x"></i>
-              </div>
-            </div>
-            <div class="interest-div">
-              <img class="img-circle " src="img/portfolio/dna.png" alt="dna">
-            </div>
-          </a>
-        </div>
-        <div class="col-sm-4 portfolio-item">
-          <a class="portfolio-link" href="#portfolioModal4" data-toggle="modal">
-            <div class="caption">
-              <div class="caption-content">
-                <i class="fa fa-search-plus fa-3x"></i>
-              </div>
-            </div>
-            <div class="interest-div">
-              <img class="img-circle" src="img/portfolio/browser.png" alt="dna">
-            </div>
-            <!-- <img class="img-fluid" src="img/portfolio/game.png" alt=""> -->
-          </a>
-        </div>
-        <div class="col-sm-4 portfolio-item">
-          <a class="portfolio-link" href="#portfolioModal6" data-toggle="modal">
-            <div class="caption">
-              <div class="caption-content">
-                <i class="fa fa-search-plus fa-3x"></i>
-              </div>
-            </div>
-            <div class="interest-div">
-              <img class="img-circle" src="img/portfolio/robot.png" alt="dna">
-            </div>
-          </a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-
-
-  <!-- Contact Section -->
-  <section id="contact">
-    <div class="container">
-      <h2 class="text-center">Contact Me</h2>
-      <hr class="star-primary">
-      <div class="row">
-        <div class="col-lg-8 mx-auto">
-          <!-- To configure the contact form email address, go to mail/contact_me.php and update the email address in the PHP file on line 19. -->
-          <!-- The form should work on most web servers, but if the form is not working you may need to configure your web server differently. -->
-          <form name="sentMessage" id="contact-form">
-            <div class="control-group">
-              <div class="form-group floating-label-form-group controls">
-                <label>Name</label>
-                <input class="form-control" id="name" name="name" type="text" placeholder="Name" required>
-              </div>
-            </div>
-            <div class="control-group">
-              <div class="form-group floating-label-form-group controls">
-                <label>Email Address</label>
-                <input class="form-control" id="email" name="email" type="email" placeholder="Email Address" required>
-              </div>
-            </div>
-            <div class="control-group">
-              <div class="form-group floating-label-form-group controls">
-                <label>Phone Number</label>
-                <input class="form-control" id="phone" name="phone" type="tel" placeholder="Phone Number">
-              </div>
-            </div>
-            <div class="control-group">
-              <div class="form-group floating-label-form-group controls">
-                <label>Message</label>
-                <textarea class="form-control" id="message" name="message" rows="5" placeholder="Message" required></textarea>
-              </div>
-            </div>
-            <br>
-            <!-- <div id="success"></div> -->
-            <div class="form-group">
-              <button type="submit" class="btn btn-success btn-lg" id="sendMessageButton">Send</button>
-            </div>
-          </form>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer class="text-center">
-    <div class="footer-above">
-      <div class="container">
-        <div class="row">
-          <div class="footer-col col-md-6">
-            <h3>Location</h3>
-            <p>Hong Kong</p>
-          </div>
-          <div class="footer-col col-md-6">
-            <h3>Around the Web</h3>
-            <ul class="list-inline">
-              <li class="list-inline-item">
-                <a class="btn-social btn-outline" href="#">
-                  <i class="fa fa-fw fa-facebook"></i>
-                </a>
-              </li>
-              <li class="list-inline-item">
-                <a class="btn-social btn-outline" href="#">
-                  <i class="fa fa-fw fa-twitter"></i>
-                </a>
-              </li>
-              <li class="list-inline-item">
-                <a class="btn-social btn-outline" href="#">
-                  <i class="fa fa-fw fa-linkedin"></i>
-                </a>
-              </li>
+          <!--//meta-->
+          <div class="details">
+            <p>
+              A coding bootcamp where we cover in detial the technologies required to become a full stack developer, through various coding orientated projects.
+            </p>
+            <ul>
+              <li>Experience with various node.js frameworks such as express.js.</li>
+              <li>Working with frontend technologies including React.js, jQuery, HTML and CSS</li>
+              <li>Developed my skills using databases such as SQL and MongoDB</li>
             </ul>
           </div>
+          <!--//details-->
         </div>
-      </div>
-    </div>
-    <div class="footer-below">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12">
-            Copyright &copy; Dom 2017
+
+        <div class="item">
+          <div class="meta">
+            <div class="upper-row">
+              <h3 class="job-title">London Biohackspace</h3>
+              <div class="time">2017 - 2018</div>
+            </div>
+            <!--//upper-row-->
+            <div class="company">Hackspace, Bethnal Green</div>
+          </div>
+          <!--//meta-->
+          <div class="details">
+            <p> The biohack space is a community run molecular biology lab that provides access to equipment for DIY biology projects. Here I have refined the following skills:</p>
+            <ul>
+              <li>Conducted experiments such as genetics testing and bacterial transformations  with other members of the lab.</li>
+              <li>Expanded my analytical skills through designing experiments and refined problem solving abilities by working with limited resources.</li>
+              <li>Lab skills such as preparation of solutions, centrifugation, transilluminator and PCR</li>
+            </ul>
+          </div>
+          <!--//details-->
+        </div>
+
+      </section>
+      <!--//section-->
+
+      <section class="section projects-section">
+        <h2 class="section-title"><i class="fa fa-archive"></i>Projects</h2>
+        <!--intro
+        <div class="intro">
+          <p></p>
+        </div>
+        -->
+        <div class="item">
+          <!-- meta data -->
+          <div class="meta">
+            <div class="upper-row">
+              <h3 class="job-title">Reddit Chatbot</h3>
+              <div class="time"> Current </div>
+              <!-- <div class="company">Home</div> -->
+            </div>
+          </div>
+          <!-- detials -->
+          <div class="details">
+            Using a dataset of all reddit comments from 2007-2015, I intend to create multiple chatbots using machine learning (specfically RNNs).
+            I've clustered the data into similar categories using LDA. My hope being that each cluster
+             will create chatbots with different 'personalities'.
           </div>
         </div>
-      </div>
+
+        <div class="item">
+          <!-- meta data -->
+          <div class="meta">
+            <div class="upper-row">
+              <h3 class="job-title">Educational Platform</h3>
+              <div class="time"> Current </div>
+              <div class="company">Accelerate</div>
+            </div>
+          </div>
+          <!-- detials -->
+          <div class="details">
+            Working with a small team to invent an educational platform that allows people to easily share knowledge and skills in an interactive way. 
+            The goal of the project is to present information in a way that is easily accessable and rewarding for both students and content creators.
+          </div>
+        </div>
+
+        <!--item -->
+        <div class="item">
+          <!-- meta data -->
+          <div class="meta">
+            <div class="upper-row">
+              <h3 class="job-title">Intercultral Impact Awards</h3>
+              <div class="time">2017</div>
+              <div class="company">Univeristy of Southampton</div>
+            </div>
+          </div>
+          <!-- detials -->
+          <div class="details">
+            Worked with students from different cultures to organise events such as a cultural festitival to promote intercultural awareness within the Southampton community.
+          </div>
+        </div>
+
+      </section>
+      <!--//section-->
+
+      <section class="skills-section section">
+        <h2 class="section-title"><i class="fa fa-rocket"></i>Programming skills &amp; Proficiency</h2>
+        <p>
+          My main programming intrests revolve around data science, bioinformatics and machine learning. 
+          The bars below indicates my experience in the following languages relative to each other:
+        </p>
+        <p></p>
+        <div class="skillset">
+          <div class="item">
+            <h3 class="level-title">Python</h3>
+            <div class="level-bar">
+              <div class="level-bar-inner" data-level="90%">
+              </div>
+            </div>
+            <!--//level-bar-->
+          </div>
+          <!--//item-->
+
+          <div class="item">
+            <h3 class="level-title">Julia </h3>
+            <div class="level-bar">
+              <div class="level-bar-inner" data-level="100%">
+              </div>
+            </div>
+            <!--//level-bar-->
+          </div>
+          <!--//item-->
+
+          <!--//item-->
+          <div class="item">
+            <h3 class="level-title">Javascript</h3>
+            <div class="level-bar">
+              <div class="level-bar-inner" data-level="90%">
+              </div>
+            </div>
+            <!--//level-bar-->
+          </div>
+
+          <div class="item">
+            <h3 class="level-title">HTML &amp; CSS</h3>
+            <div class="level-bar">
+              <div class="level-bar-inner" data-level="80%">
+              </div>
+            </div>
+            <!--//level-bar-->
+          </div>
+          <!--//item-->
+
+          <div class="item">
+            <h3 class="level-title">Bash scripting</h3>
+            <div class="level-bar">
+              <div class="level-bar-inner" data-level="30%">
+              </div>
+            </div>
+            <!--//level-bar-->
+          </div>
+          <!--//item-->
+
+          <div class="item">
+            <h3 class="level-title">R</h3>
+            <div class="level-bar">
+              <div class="level-bar-inner" data-level="45%">
+              </div>
+            </div>
+            <!--//level-bar-->
+          </div>
+          <!--//item-->
+
+        </div>
+      </section>
+      <!--//skills-section-->
+
     </div>
+    <!--//main-body-->
+  </div>
+
+  <footer class="footer">
+    <div class="text-center">
+      <!--/* This template is released under the Creative Commons Attribution 3.0 License. Please keep the attribution link below when using for your own project. Thank you for your support. :) If you'd like to use the template without the attribution, you can check out other license options via our website: themes.3rdwavemedia.com */-->
+    </div>
+    <!--//container-->
   </footer>
+  <!--//footer-->
 
-  <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
-  <div class="scroll-top d-lg-none">
-    <a class="btn btn-primary js-scroll-trigger" href="#page-top">
-      <i class="fa fa-chevron-up"></i>
-    </a>
-  </div>
-
-  <!-- Portfolio Modals -->
-  <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="close-modal" data-dismiss="modal">
-          <div class="lr">
-            <div class="rl"></div>
-          </div>
-        </div>
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-8 mx-auto">
-              <div class="modal-body">
-                <h2>Project Title</h2>
-                <hr class="star-primary">
-                <img class="img-fluid img-centered" src="img/portfolio/cabin.png" alt="">
-                <p>Use this area of the page to describe your project. The icon above is part of a free icon set by
-                  <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the
-                  entire set with 146 icons for only $12!</p>
-                <ul class="list-inline item-details">
-                  <li>Client:
-                    <strong>
-                      <a href="http://startbootstrap.com">Start Bootstrap</a>
-                    </strong>
-                  </li>
-                  <li>Date:
-                    <strong>
-                      <a href="http://startbootstrap.com">April 2014</a>
-                    </strong>
-                  </li>
-                  <li>Service:
-                    <strong>
-                      <a href="http://startbootstrap.com">Web Development</a>
-                    </strong>
-                  </li>
-                </ul>
-                <button class="btn btn-success" type="button" data-dismiss="modal">
-                  <i class="fa fa-times"></i>
-                  Close</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="close-modal" data-dismiss="modal">
-          <div class="lr">
-            <div class="rl"></div>
-          </div>
-        </div>
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-8 mx-auto">
-              <div class="modal-body">
-                <h2>Project Title</h2>
-                <hr class="star-primary">
-                <img class="img-fluid img-centered" src="img/portfolio/cake.png" alt="">
-                <p>Use this area of the page to describe your project. The icon above is part of a free icon set by
-                  <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the
-                  entire set with 146 icons for only $12!</p>
-                <ul class="list-inline item-details">
-                  <li>Client:
-                    <strong>
-                      <a href="http://startbootstrap.com">Start Bootstrap</a>
-                    </strong>
-                  </li>
-                  <li>Date:
-                    <strong>
-                      <a href="http://startbootstrap.com">April 2014</a>
-                    </strong>
-                  </li>
-                  <li>Service:
-                    <strong>
-                      <a href="http://startbootstrap.com">Web Development</a>
-                    </strong>
-                  </li>
-                </ul>
-                <button class="btn btn-success" type="button" data-dismiss="modal">
-                  <i class="fa fa-times"></i>
-                  Close</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="close-modal" data-dismiss="modal">
-          <div class="lr">
-            <div class="rl"></div>
-          </div>
-        </div>
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-8 mx-auto">
-              <div class="modal-body">
-                <h2>Project Title</h2>
-                <hr class="star-primary">
-                <img class="img-fluid img-centered" src="img/portfolio/circus.png" alt="">
-                <p>Use this area of the page to describe your project. The icon above is part of a free icon set by
-                  <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the
-                  entire set with 146 icons for only $12!</p>
-                <ul class="list-inline item-details">
-                  <li>Client:
-                    <strong>
-                      <a href="http://startbootstrap.com">Start Bootstrap</a>
-                    </strong>
-                  </li>
-                  <li>Date:
-                    <strong>
-                      <a href="http://startbootstrap.com">April 2014</a>
-                    </strong>
-                  </li>
-                  <li>Service:
-                    <strong>
-                      <a href="http://startbootstrap.com">Web Development</a>
-                    </strong>
-                  </li>
-                </ul>
-                <button class="btn btn-success" type="button" data-dismiss="modal">
-                  <i class="fa fa-times"></i>
-                  Close</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="close-modal" data-dismiss="modal">
-          <div class="lr">
-            <div class="rl"></div>
-          </div>
-        </div>
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-8 mx-auto">
-              <div class="modal-body">
-                <h2>Project Title</h2>
-                <hr class="star-primary">
-                <img class="img-fluid img-centered" src="img/portfolio/game.png" alt="">
-                <p>Use this area of the page to describe your project. The icon above is part of a free icon set by
-                  <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the
-                  entire set with 146 icons for only $12!</p>
-                <ul class="list-inline item-details">
-                  <li>Client:
-                    <strong>
-                      <a href="http://startbootstrap.com">Start Bootstrap</a>
-                    </strong>
-                  </li>
-                  <li>Date:
-                    <strong>
-                      <a href="http://startbootstrap.com">April 2014</a>
-                    </strong>
-                  </li>
-                  <li>Service:
-                    <strong>
-                      <a href="http://startbootstrap.com">Web Development</a>
-                    </strong>
-                  </li>
-                </ul>
-                <button class="btn btn-success" type="button" data-dismiss="modal">
-                  <i class="fa fa-times"></i>
-                  Close</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="close-modal" data-dismiss="modal">
-          <div class="lr">
-            <div class="rl"></div>
-          </div>
-        </div>
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-8 mx-auto">
-              <div class="modal-body">
-                <h2>Project Title</h2>
-                <hr class="star-primary">
-                <img class="img-fluid img-centered" src="img/portfolio/safe.png" alt="">
-                <p>Use this area of the page to describe your project. The icon above is part of a free icon set by
-                  <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the
-                  entire set with 146 icons for only $12!</p>
-                <ul class="list-inline item-details">
-                  <li>Client:
-                    <strong>
-                      <a href="http://startbootstrap.com">Start Bootstrap</a>
-                    </strong>
-                  </li>
-                  <li>Date:
-                    <strong>
-                      <a href="http://startbootstrap.com">April 2014</a>
-                    </strong>
-                  </li>
-                  <li>Service:
-                    <strong>
-                      <a href="http://startbootstrap.com">Web Development</a>
-                    </strong>
-                  </li>
-                </ul>
-                <button class="btn btn-success" type="button" data-dismiss="modal">
-                  <i class="fa fa-times"></i>
-                  Close</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="close-modal" data-dismiss="modal">
-          <div class="lr">
-            <div class="rl"></div>
-          </div>
-        </div>
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-8 mx-auto">
-              <div class="modal-body">
-                <h2>Project Title</h2>
-                <hr class="star-primary">
-                <img class="img-fluid img-centered" src="img/portfolio/submarine.png" alt="">
-                <p>Use this area of the page to describe your project. The icon above is part of a free icon set by
-                  <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the
-                  entire set with 146 icons for only $12!</p>
-                <ul class="list-inline item-details">
-                  <li>Client:
-                    <strong>
-                      <a href="http://startbootstrap.com">Start Bootstrap</a>
-                    </strong>
-                  </li>
-                  <li>Date:
-                    <strong>
-                      <a href="http://startbootstrap.com">April 2014</a>
-                    </strong>
-                  </li>
-                  <li>Service:
-                    <strong>
-                      <a href="http://startbootstrap.com">Web Development</a>
-                    </strong>
-                  </li>
-                </ul>
-                <button class="btn btn-success" type="button" data-dismiss="modal">
-                  <i class="fa fa-times"></i>
-                  Close</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Bootstrap core JavaScript -->
-  <script src="//code.jquery.com/jquery-1.10.2.js"></script>
-  <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script>
-  <!-- <script src="vendor/jquery/jquery.min.js"></script> -->
-  <script src="vendor/popper/popper.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
-  <!-- Plugin JavaScript -->
-  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-  <!-- Contact Form JavaScript -->
-  <script src="js/jqBootstrapValidation.js"></script>
-  <script src="js/contact_me.js"></script>
-  <!-- p5.js  -->
-  <script src="js/p5.min.js"></script>
-  <!-- weather -->
-  <script src="js/weather/sun.js"></script>
-  <script src="js/weather/rainbow.js"></script>
-  <script src="js/weather/clouds.js"></script>
-  <script src="js/weather/rain.js"></script>
-  <script src="js/weather/weather.js"></script>
-  <!-- JavaScript -->
-  <script src="js/alertify.min.js"></script>
-  <!-- <script src="//cdn.jsdelivr.net/npm/alertifyjs@1.11.0/build/alertify.min.js"></script> -->
-  <script src="js/freelancer.min.js"></script>
-  <!-- <script src="js/weather.js"></script> -->
-  <script src="js/contact.js"></script>
-
-
-
-
+  <!-- Javascript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <!-- <script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script> -->
+  <script
+  src="https://code.jquery.com/jquery-1.11.3.min.js"
+  integrity="sha256-7LkWEzqTdpEfELxcZZlS6wAx5Ff13zZ83lYO2/ujj7g="
+  crossorigin="anonymous"></script>
+  <!-- <script type="text/javascript" src="assets/plugins/jquery-1.11.3.min.js"></script> -->
+  <!-- custom js -->
+  <script type="text/javascript" src="assets/js/main.js"></script>
   <script>
-    $(".star-slider").draggable({
-      axis: "x",
-      containment: "parent",
-      drag: function (event, ui) {
-        setup()
-      }
-      // drag: p5.setup(),
-    })
-  </script>
+  jQuery(document).ready(function($) {
 
+
+      /*======= Skillset *=======*/
+      
+      $('.level-bar-inner').css('width', '0');
+      
+      $(window).on('load', function() {
+
+          $('.level-bar-inner').each(function() {
+          
+              var itemWidth = $(this).data('level');
+              
+              $(this).animate({
+                  width: itemWidth
+              }, 800);
+              
+          });
+
+      });
+    
+      
+
+  });
+    
+  </script>
 </body>
 
 </html>
